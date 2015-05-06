@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head><title>Create</title></head>
+<body>
+	<form id="form" method="post" th:action="@{/users/save}">
+		<label for="firstName">Firstname</label><input type="text" id="firstName" name="firstName"/>
+		<label for="age">Age</label><input type="text" id="age" name="age"/>
+		<label for="surname">Surname</label><input type="text" id="surname" name="surname"/>
+		<label for="email">Email</label><input type="text" id="email" name="email"/>
+		
+		<input type="submit">Submit</input>
+	</form>
+</body>
+
+</html>
